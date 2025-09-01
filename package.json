@@ -1,0 +1,24 @@
+{
+  "name": "express-switchware",
+  "version": "1.0.0",
+  "description": "A lightweight Express middleware to **conditionally dispatch requests** to different handlers based on the request.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "express",
+    "express-middleware",
+    "conditional"
+  ],
+  "author": "Crizant Lai",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "typescript": "^5.9.2"
+  }
+}
