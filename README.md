@@ -26,6 +26,8 @@ yarn add express-switchware
 ## 🛠 Usage Example 1: API versioning
 
 ```ts
+import expressSwitchware from "express-switchware";
+
 // Version-specific handlers
 const v1Handler: express.RequestHandler = (req, res) =>
   res.json({ version: "v1", data: "Hello from API v1" });
@@ -48,6 +50,8 @@ app.use(
 ## 🛠 Usage Example 2: Payment provider switch
 
 ```ts
+import expressSwitchware from "express-switchware";
+
 // Handlers for different payment providers
 const stripeHandler: express.RequestHandler = (req, res) =>
   res.send("Processed payment with Stripe");
@@ -119,6 +123,7 @@ app.use(
 If the key doesn’t match any mapping, express-switchware will forward an error to your error handler:
 
 ```ts
+// The express error handler can catch errors thrown
 app.use(
   (
     err: Error,
