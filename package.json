@@ -1,6 +1,6 @@
 {
   "name": "express-switchware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight Express middleware to **conditionally dispatch requests** to different handlers based on the request.",
   "type": "module",
   "main": "dist/index.js",

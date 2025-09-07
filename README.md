@@ -72,7 +72,7 @@ app.post(
 
 ## ⚡ TypeScript Safety
 
-If you use a schema (e.g. [`Zod`](https://zod.dev/)) or a TypeScript union type for platform, you get compile-time checking:
+If you use a schema (e.g. [`Zod`](https://zod.dev/)) or a TypeScript union type, you get compile-time checking:
 
 ```ts
 type ApiVersion = "v1" | "v2";
